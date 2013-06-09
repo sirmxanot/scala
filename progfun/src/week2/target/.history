@@ -1,0 +1,4 @@
+load:MathTricks
+load:MathTricks.scala
+load: MathTricks.scala
+load MathTricks.scala

@@ -1,0 +1,9 @@
+load: MathTricks
+load MathTricks
+import MathTricks
+import MathTricks.scala
+:import MathTricks.scala
+:import MathTricks
+:import week2/MathTricks
+:mport week2/MathTricks
+import week2/MathTricks
