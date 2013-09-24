@@ -1,0 +1,33 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set(/media/files/Sites/scala/assignments/recfun/src/main/scala/common/package.scala, /media/files/Sites/scala/assignments/recfun/src/main/scala/recfun/Main.scala)[0m
+[0m[[0mdebug[0m] [0m	added: Set(/media/files/Sites/scala/recfun/src/main/scala/common/package.scala, /media/files/Sites/scala/recfun/src/main/scala/recfun/Main.scala)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set(/media/files/Sites/scala/assignments/recfun/target/scala-2.10/classes/common/package.class, /media/files/Sites/scala/assignments/recfun/target/scala-2.10/classes/recfun/Main$.class, /media/files/Sites/scala/assignments/recfun/target/scala-2.10/classes/recfun/Main$$anonfun$main$1.class, /media/files/Sites/scala/assignments/recfun/target/scala-2.10/classes/common/package$.class, /media/files/Sites/scala/assignments/recfun/target/scala-2.10/classes/common/package$$anonfun$subFile$1.class, /media/files/Sites/scala/assignments/recfun/target/scala-2.10/classes/recfun/Main.class, /media/files/Sites/scala/assignments/recfun/target/scala-2.10/classes/recfun/Main$$anonfun$main$1$$anonfun$apply$mcVI$sp$1.class)[0m
+[0m[[0mdebug[0m] [0mModified external sources: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/media/files/Sites/scala/assignments/recfun/src/main/scala/common/package.scala, /media/files/Sites/scala/assignments/recfun/src/main/scala/recfun/Main.scala, /media/files/Sites/scala/recfun/src/main/scala/common/package.scala, /media/files/Sites/scala/recfun/src/main/scala/recfun/Main.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set(/media/files/Sites/scala/assignments/recfun/src/main/scala/common/package.scala, /media/files/Sites/scala/assignments/recfun/src/main/scala/recfun/Main.scala)[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mInitially invalidated: Set(/media/files/Sites/scala/assignments/recfun/src/main/scala/common/package.scala, /media/files/Sites/scala/assignments/recfun/src/main/scala/recfun/Main.scala, /media/files/Sites/scala/recfun/src/main/scala/common/package.scala, /media/files/Sites/scala/recfun/src/main/scala/recfun/Main.scala)[0m
+[0m[[0minfo[0m] [0mCompiling 2 Scala sources to /media/files/Sites/scala/recfun/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 44105558, interfacing (CompilerInterface) with Scala compiler version 2.10.1[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-deprecation[0m
+[0m[[0mdebug[0m] [0m	-feature[0m
+[0m[[0mdebug[0m] [0m	-d[0m
+[0m[[0mdebug[0m] [0m	/media/files/Sites/scala/recfun/target/scala-2.10/classes[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/netx.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/plugin.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes:/home/sirmxanot/.sbt/boot/scala-2.10.1/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/media/files/Sites/scala/recfun/target/scala-2.10/classes[0m
+[0m[[0mdebug[0m] [0mScala compilation took 5.120815411 s[0m
+[0m[[0mdebug[0m] [0mStep 2 changed sources and immdediate dependencies:[0m
+[0m[[0mdebug[0m] [0m	Set(/media/files/Sites/scala/assignments/recfun/src/main/scala/common/package.scala, /media/files/Sites/scala/assignments/recfun/src/main/scala/recfun/Main.scala, /media/files/Sites/scala/recfun/src/main/scala/common/package.scala, /media/files/Sites/scala/recfun/src/main/scala/recfun/Main.scala)[0m
+[0m[[0mdebug[0m] [0mNon-trivial strongly connected components: [0m
+[0m[[0mdebug[0m] [0m	[0m
+[0m[[0mdebug[0m] [0mStep 2 invalidated sources:[0m
+[0m[[0mdebug[0m] [0m	Set(/media/files/Sites/scala/assignments/recfun/src/main/scala/common/package.scala, /media/files/Sites/scala/assignments/recfun/src/main/scala/recfun/Main.scala, /media/files/Sites/scala/recfun/src/main/scala/common/package.scala, /media/files/Sites/scala/recfun/src/main/scala/recfun/Main.scala)[0m

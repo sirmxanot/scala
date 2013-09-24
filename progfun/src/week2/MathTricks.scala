@@ -71,5 +71,28 @@ object MathTricks {
   def product(f: Int => Int)(a:Int, b: Int): Int = mapReduce(f,(x,y) => x*y, 1)(a, b)
 
   // Fixed point of a function
+  // A number x is called a fixed point of a function f if f(x) = x.
+  val tolerance = 0.0001
+  def isCloseEnough(x: Double, y: Double) = 
+    abs((x-y)/x)/x < tolerance
+  def fixedPoint(f: Double => Double)(firstGuess: Double) = {
+    def iterate(guess: Double): Double = {
+      val next = f(guess)
+      if (isCloseEnough(guess, next)) next
+      else iterate(next)
+    }
+    iterate(firstGuess)
+  }
 
+  // define sqrt using fixedPoint 
+  def sqrt(x: Double) = 
+    fixedPoint(y => (y + x / y) / 2)(1.0)
+
+  // abstracting stabilization technique into its own function
+  def averageDamp(f: Double => Double)(x: Double) = (x + f(x)) / 2
+
+  //sqrt using fixedPoint and averageDamp
+  def sqrt(x: Double) =
+    fixedPoint(averageDamp(y => x / y))(1.0)
 }
+

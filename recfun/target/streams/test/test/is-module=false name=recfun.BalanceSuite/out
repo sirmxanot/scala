@@ -3,13 +3,3 @@
 [0m[[0minfo[0m] [0m[32m- balance: 'I told him ...' is balanced[0m[0m
 [0m[[0minfo[0m] [0m[32m- balance: ':-)' is unbalanced[0m[0m
 [0m[[0minfo[0m] [0m[32m- balance: counting is not enough[0m[0m
-[0m[[0minfo[0m] [0m[32m- balance: '' is balanced[0m[0m
-[0m[[0minfo[0m] [0m[32m- balance: '()' is balanced[0m[0m
-[0m[[0minfo[0m] [0m[32m- balance: (()) is balanced[0m[0m
-[0m[[0minfo[0m] [0m[32m- balance: (1(2)3) is balanced[0m[0m
-[0m[[0minfo[0m] [0m[32m- balance: ( is not balanced[0m[0m
-[0m[[0minfo[0m] [0m[32m- balance: ) is not balanced[0m[0m
-[0m[[0minfo[0m] [0m[32m- balance: )( is not balanced[0m[0m
-[0m[[0minfo[0m] [0m[32m- balance: ())( is not balanced[0m[0m
-[0m[[0minfo[0m] [0m[32m- balance: ()(( is not balanced[0m[0m
-[0m[[0minfo[0m] [0m[32m- balance: (()() is not balanced[0m[0m
