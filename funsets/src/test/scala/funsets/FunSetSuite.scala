@@ -86,7 +86,7 @@ class FunSetSuite extends FunSuite {
    * Once you finish your implementation of "singletonSet", exchange the
    * function "ignore" by "test".
    */
-  test("singletonSet(1) contains 1") {
+  ignore("singletonSet(1) contains 1") {
     
     /**
      * We create a new instance of the "TestSets" trait, this gives us access
@@ -97,50 +97,16 @@ class FunSetSuite extends FunSuite {
        * The string argument of "assert" is a message that is printed in case
        * the test fails. This helps identifying which assertion failed.
        */
-      assert(contains(s1, 1), "Singleton 1 Failed")
-      assert(contains(s2, 2), "Singleton 2 Failed")
-      assert(contains(s3, 3), "Singleton 3 Failed")
-      assert(!contains(s3, 1), "Singleton 3 Failed")
-      assert(!contains(s2, 3), "Singleton 2 Failed")
+      assert(contains(s1, 1), "Singleton")
     }
   }
 
-  test("union contains all elements") {
+  ignore("union contains all elements") {
     new TestSets {
       val s = union(s1, s2)
-      assert(contains(s, 1), "1 not in s, should be")
-      assert(contains(s, 2), "2 not in s, should be")
-      assert(!contains(s, 3), "3 in s, shouldn't be")
-
-      val t = union(union(s1, s2), s3)
-      assert(contains(t, 1), "1 not in t, should be")
-      assert(contains(t, 2), "2 not in t, should be")
-      assert(contains(t, 3), "3 not in t, should be")
-      assert(!contains(t, 4), "4 in t, shouldn't be")
-    }
-  }
-
-  test("intersect contains only common elements") {
-    new TestSets {
-      val s = union(s1, s2)
-      val t = union(union(s1, s2), s3)
-      val test = intersect(s,t)
-      assert(contains(test, 1), "1 not in test, should be")
-      assert(contains(test, 2), "2 not in test, should be")
-      assert(!contains(test, 3), "3 in test, shouldn't be")
-      assert(!contains(test, 4), "4 in test, shouldn't be")
-    }
-  }
-
-  test("diff contains all elements in s but not in t") {
-    new TestSets {
-      val t = union(s1, s2)
-      val s = union(union(s1, s2), s3)
-      val test = diff(s,t)
-      assert(!contains(test, 1), "1 in test, shouldn't be")
-      assert(!contains(test, 2), "2 in test, shouldn't be")
-      assert(contains(test, 3), "3 not in test, should be")
-      assert(!contains(test, 4), "4 in test, shouldn't be")
+      assert(contains(s, 1), "Union 1")
+      assert(contains(s, 2), "Union 2")
+      assert(!contains(s, 3), "Union 3")
     }
   }
 }

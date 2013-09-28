@@ -20,34 +20,30 @@ object FunSets {
   /**
    * Returns the set of the one given element.
    */
-  def singletonSet(elem: Int): Set = ans => ans == elem
+  def singletonSet(elem: Int): Set = ???
 
   /**
    * Returns the union of the two given sets,
    * the sets of all elements that are in either `s` or `t`.
    */
-  def union(s: Set, t: Set): Set = 
-    ans => contains(s,ans) || contains(t,ans)
+  def union(s: Set, t: Set): Set = ???
 
   /**
    * Returns the intersection of the two given sets,
    * the set of all elements that are both in `s` and `t`.
    */
-  def intersect(s: Set, t: Set): Set =
-    ans => contains(s,ans) && contains(t,ans)
+  def intersect(s: Set, t: Set): Set = ???
 
   /**
    * Returns the difference of the two given sets,
    * the set of all elements of `s` that are not in `t`.
    */
-  def diff(s: Set, t: Set): Set =
-    ans => contains(s,ans) && !contains(t,ans)
+  def diff(s: Set, t: Set): Set = ???
 
   /**
    * Returns the subset of `s` for which `p` holds.
    */
-  def filter(s: Set, p: Int => Boolean): Set =
-    ans => contains(s,ans) && p(ans)
+  def filter(s: Set, p: Int => Boolean): Set = ???
 
   /**
    * The bounds for `forall` and `exists` are +/- 1000.
