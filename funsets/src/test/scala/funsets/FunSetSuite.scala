@@ -86,7 +86,7 @@ class FunSetSuite extends FunSuite {
    * Once you finish your implementation of "singletonSet", exchange the
    * function "ignore" by "test".
    */
-  ignore("singletonSet(1) contains 1") {
+  test("singletonSet(1) contains 1") {
     
     /**
      * We create a new instance of the "TestSets" trait, this gives us access
@@ -101,12 +101,72 @@ class FunSetSuite extends FunSuite {
     }
   }
 
-  ignore("union contains all elements") {
+  test("union contains all elements") {
     new TestSets {
-      val s = union(s1, s2)
-      assert(contains(s, 1), "Union 1")
-      assert(contains(s, 2), "Union 2")
-      assert(!contains(s, 3), "Union 3")
+      val a = union(s1, s2)
+      assert(contains(a, 1), "Union 1")
+      assert(contains(a, 2), "Union 2")
+      assert(!contains(a, 3), "Union 3")
+    }
+  }
+
+  test("intersect contains only common elements") {
+    new TestSets {
+      val a = union(s1, s2)
+      val b = union(s1, s3)
+      val c = intersect(a,b)
+      assert(c(1), "intersect 1")
+      assert(!c(2), "intersect 2")
+      assert(!c(3), "intersect 3")
+    }
+  }
+
+  test("diff contains only !common elements") {
+    new TestSets {
+      val a = union(s1, s2)
+      val b = union(s1, s3)
+      val c = diff(a,b)
+      assert(!c(1), "intersect 1")
+      assert(c(2), "intersect 2")
+      assert(!c(3), "intersect 3")
+    }
+  }
+
+  test("filter contains only elements matching p") {
+    new TestSets {
+      val a = union(s1, s2)
+      val b = union(a, s3)
+      val c = filter(b, ans => ans == 3)
+      assert(!c(1), "intersect 1")
+      assert(!c(2), "intersect 2")
+      assert(c(3), "intersect 3")
+    }
+  }
+
+  test("forall answers true when all elements of s meet p") {
+    new TestSets {
+      val a = union(union(s1, s2),s3)
+      assert(forall(a, ans => ans < 4))
+      assert(!forall(a, ans => ans > 4))
+      assert(!forall(a, ans => ans < 0))
+    }
+  }
+
+  test("exists answers true if one element of s meets p") {
+    new TestSets {
+      val a = union(union(s1, s2),s3)
+      assert(exists(a, ans => ans == 3))
+      assert(!exists(a, ans => ans == 4))
+      assert(!exists(a, ans => ans == 0))
+    }
+  }
+
+  test("map applies p to all elements of s") {
+    new TestSets {
+      val a = union(union(s1, s2),s3)
+      assert(exists(map(a, ans => ans*10),ans => ans == 20))
+      assert(exists(map(a, ans => ans*10),ans => ans == 30))
+      assert(!exists(map(a, ans => ans*10),ans => ans == 40))
     }
   }
 }

@@ -1,0 +1,41 @@
+3.2 - How Classes Are Organized
+- Classes and objects are organized in packages
+- To place a class or object inside a package, use a package clause:
+    package progfun.examples
+    object Hello {...}
+  - This would place Hello in the package progfun examples
+  - You can then refer to Hello by its fully qualified name: progfun.examples.Hello
+  - scala progfun.examples.Hello
+- import packageName._ (everything)
+- or import packageName.className (or objectName)
+- all members of packages scala, java.lang, and scala.Predef are automatically included
+- Scala is a single inheritance language: a class can only have one superclass
+- If you need to have more than one superclass, use traits where you would use the abstract class
+- Classes, ojbects and traits can inherit from at most one class but arbitrary many traits
+- example:
+    class Square extends Shape with Planar with Movable...
+- Traits resemble interfaces in Java, but are more powerful because they can contain fields and concrete methods
+- Traits cannot have value parameters, only classes can
+- Any is the base type of all types
+- AnyRef is the base type of all reference types
+- AnyVal is teh base type of all primitive types
+- Exception handling: throw Exc
+  - aborts evaluation with the exception Exc
+  - the type of this expression is Nothing
+- Every reference class type also has null as a value
+- The type of null is Null
+- Null is a subtype of every class that inherits from Object; it is incompatbile with subtypes of AnyVal.
+    val x = null          // x: Null = null
+    val y: String = null  // y: String = null
+    val z: Int = null     // error: type mismatch
+- If a function returns multiple types, that function's output type is their earliest common ancestor class
+
+
+3.3 - Polymorphism
+- Polymorphism means that a function type comes "in many forms."
+  - the function can be applied to arguments of many types, or
+  - the type can have instances of many types
+- We have seen two principal forms of polymorphism:
+  - subtyping: instances of a subclass can be passed to a base class
+  - generics: instances of a function or class are created by type parameterization
+  

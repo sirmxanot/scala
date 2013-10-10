@@ -5,4 +5,8 @@
 [0m[[0minfo[0m] [0m[32m- singletonSet(1) contains 1[0m[0m
 [0m[[0minfo[0m] [0m[32m- union contains all elements[0m[0m
 [0m[[0minfo[0m] [0m[32m- intersect contains only common elements[0m[0m
-[0m[[0minfo[0m] [0m[32m- diff contains all elements in s but not in t[0m[0m
+[0m[[0minfo[0m] [0m[32m- diff contains only !common elements[0m[0m
+[0m[[0minfo[0m] [0m[32m- filter contains only elements matching p[0m[0m
+[0m[[0minfo[0m] [0m[32m- forall answers true when all elements of s meet p[0m[0m
+[0m[[0minfo[0m] [0m[32m- exists answers true if one element of s meets p[0m[0m
+[0m[[0minfo[0m] [0m[32m- map applies p to all elements of s[0m[0m
